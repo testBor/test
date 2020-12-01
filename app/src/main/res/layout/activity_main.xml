@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="20dp"
+              tools:context=".ui.MainActivity">
+
+    <EditText
+            android:id="@+id/etCity"
+            android:inputType="textNoSuggestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="Enter your city"
+    />
+
+    <Button
+            android:id="@+id/btnViewWether"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View weather" />
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+    >
+        <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+        >
+
+            <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:text="Temperature"
+                    android:textSize="14sp"
+            />
+
+            <TextView
+                    android:id="@+id/tvTmp"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+        >
+
+            <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:text="Temperature MAX"
+                    android:textSize="14sp"
+            />
+
+            <TextView
+                    android:id="@+id/tvTmpMax"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+        >
+
+            <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:text="Wind Speed"
+                    android:textSize="14sp"
+            />
+
+            <TextView
+                    android:id="@+id/tvWindSpeed"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
